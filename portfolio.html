@@ -15,6 +15,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -34,6 +35,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="mobile-menu-open js-open-menu" type="button">
+                <svg class="hamburger" width="32" height="22">
+                    <use href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </button>
             <address class="auth-nav">
                 <ul class="list">
                     <li class="item">
@@ -44,6 +50,57 @@
                     </li>
                 </ul>
             </address>
+        </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close js-close-menu">
+                    <svg class="mobile-close">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-list list">
+                    <li><a class="mobile-menu-text link" href="./index.html">studio</a>
+                    </li>
+                    <li><a class="mobile-menu-text link current" href="./portfolio.html">portfolio</a>
+                    </li>
+                    <li><a class="mobile-menu-text link" href="./contacts.html">contacts</a>
+                    </li>
+                </ul>
+                <div class="mobile-contacts">
+                    <ul class="mobile-menu-contacts list">
+                        <li><a class="mobile-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li><a class="mobile-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu-links list">
+                        <li class="mobile-menu-social"><a class="mobile-menu-link link" href="">
+                                <svg class="icon-social">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social"><a class="mobile-menu-link link" href="">
+                                <svg class="icon-social">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social"><a class="mobile-menu-link link" href="">
+                                <svg class="icon-social">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social"><a class="mobile-menu-link link" href="">
+                                <svg class="icon-social">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -63,7 +120,20 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-banking.jpg" alt="banking online" width="100%">
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-banking.webp 1x, ./images/desktop-portfolio-banking@2x.webp 2x, ./images/desktop-portfolio-banking@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                   
+                                    <source srcset="./images/desktop-portfolio-banking.jpg 1x, ./images/desktop-portfolio-banking@2x.jpg 2x, ./images/desktop-portfolio-banking@3x.jpg 3x" media="(min-width: 1200px)" >
+                                   
+                                    <source srcset="./images/tablet-portfolio-banking.webp 1x, ./images/tablet-portfolio-banking@2x.webp 2x, ./images/tablet-portfolio-banking@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-banking.jpg 1x, ./images/tablet-portfolio-banking@2x.jpg 2x, ./images/tablet-portfolio-banking@3x.jpg 3x" media="(min-width: 768px)" >
+                                   
+                                    <source srcset="./images/mobile-portfolio-banking.webp 1x, ./images/mobile-portfolio-banking@2x.webp 2x, ./images/mobile-portfolio-banking@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                               
+                                    <source srcset="./images/mobile-portfolio-banking.jpg 1x, ./images/mobile-portfolio-banking@2x.jpg 2x, ./images/mobile-portfolio-banking@3x.jpg 3x" media="(max-width: 767px)" >
+                                <img src="./images/mobile-portfolio-banking.jpg" alt="banking online" width="100%">
+                            </picture>
                                 <div class="work-text">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta atque illo
                                         delectus
@@ -82,7 +152,20 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-app-pay.jpg" alt="pay by your phone" width="100%">
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-app-pay.webp 1x, ./images/desktop-portfolio-app-pay@2x.webp 2x, ./images/desktop-portfolio-app-pay@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                    
+                                    <source srcset="./images/desktop-portfolio-app-pay.jpg 1x, ./images/desktop-portfolio-app-pay@2x.jpg 2x, ./images/desktop-portfolio-app-pay@3x.jpg 3x" media="(min-width: 1200px)" >
+                                   
+                                    <source srcset="./images/tablet-portfolio-app-pay.webp 1x, ./images/tablet-portfolio-app-pay@2x.webp 2x, ./images/tablet-portfolio-app-pay@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-app-pay.jpg 1x, ./images/tablet-portfolio-app-pay@2x.jpg 2x, ./images/tablet-portfolio-app-pay@3x.jpg 3x" media="(min-width: 768px)" >
+                                   
+                                    <source srcset="./images/mobile-portfolio-app-pay.webp 1x, ./images/mobile-portfolio-app-pay@2x.webp 2x, ./images/mobile-portfolio-app-pay@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                               
+                                    <source srcset="./images/mobile-portfolio-app-pay.jpg 1x, ./images/mobile-portfolio-app-pay@2x.jpg 2x, ./images/mobile-portfolio-app-pay@3x.jpg 3x" media="(max-width: 767px)" >
+                                <img src="./images/mobile-portfolio-app-pay.jpg" alt="pay by your phone" width="100%">
+                            </picture>
                                 <div class="work-text">
                                     <p>Animi, maxime quam reiciendis vel, impedit ab fuga similique dolorum unde nemo
                                         quis
@@ -103,8 +186,21 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-meditation-app.jpg" alt="application for meditation"
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-meditation-app.webp 1x, ./images/desktop-portfolio-meditation-app@2x.webp 2x, ./images/desktop-portfolio-meditation-app@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                    
+                                    <source srcset="./images/desktop-portfolio-meditation-app.jpg 1x, ./images/desktop-portfolio-meditation-app@2x.jpg 2x, ./images/desktop-portfolio-meditation-app@3x.jpg 3x" media="(min-width: 1200px)" >
+                                    
+                                    <source srcset="./images/tablet-portfolio-meditation-app.webp 1x, ./images/tablet-portfolio-meditation-app@2x.webp 2x, ./images/tablet-portfolio-meditation-app@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-meditation-app.jpg 1x, ./images/tablet-portfolio-meditation-app@2x.jpg 2x, ./images/tablet-portfolio-meditation-app@3x.jpg 3x" media="(min-width: 768px)" >
+                                    
+                                    <source srcset="./images/mobile-portfolio-meditation-app.webp 1x, ./images/mobile-portfolio-meditation-app@2x.webp 2x, ./images/mobile-portfolio-meditation-app@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                               
+                                    <source srcset="./images/mobile-portfolio-meditation-app.jpg 1x, ./images/mobile-portfolio-meditation-app@2x.jpg 2x, ./images/mobile-portfolio-meditation-app@3x.jpg 3x" media="(max-width: 767px)" >
+                                <img src="./images/mobile-portfolio-meditation-app.jpg" alt="application for meditation"
                                     width="100%">
+                                </picture>
                                 <div class="work-text">
                                     <p>Odit corporis natus mollitia iure repudiandae quam possimus sunt ratione aliquid
                                         quo.
@@ -123,7 +219,20 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-taxi-service.jpg" alt="taxi service" width="100%">
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-taxi-service.webp 1x, ./images/desktop-portfolio-taxi-service@2x.webp 2x, ./images/desktop-portfolio-taxi-service@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                    
+                                    <source srcset="./images/desktop-portfolio-taxi-service.jpg 1x, ./images/desktop-portfolio-taxi-service@2x.jpg 2x, ./images/desktop-portfolio-taxi-service@3x.jpg 3x" media="(min-width: 1200px)" >
+                                   
+                                    <source srcset="./images/tablet-portfolio-taxi-service.webp 1x, ./images/tablet-portfolio-taxi-service@2x.webp 2x, ./images/tablet-portfolio-taxi-service@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-taxi-service.jpg 1x, ./images/tablet-portfolio-taxi-service@2x.jpg 2x, ./images/tablet-portfolio-taxi-service@3x.jpg 3x" media="(min-width: 768px)" >
+                                    
+                                    <source srcset="./images/mobile-portfolio-taxi-service.webp 1x, ./images/mobile-portfolio-taxi-service@2x.webp 2x, ./images/mobile-portfolio-taxi-service@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                                 
+                                    <source srcset="./images/mobile-portfolio-taxi-service.jpg 1x, ./images/mobile-portfolio-taxi-service@2x.jpg 2x, ./images/mobile-portfolio-taxi-service@3x.jpg 3x" media="(max-width: 767px)" >
+                                 <img src="./images/mobile-portfolio-taxi-service.jpg" alt="taxi service" width="100%">
+                            </picture>
                                 <div class="work-text">
                                     <p>Magnam harum ducimus quasi illum unde nulla quis aliquam deleniti? Fugit
                                         voluptates animi
@@ -142,7 +251,23 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-screen.jpg" alt="screen illustration" width="100%">
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-screen.webp 1x, ./images/desktop-portfolio-screen@2x.webp 2x, ./images/desktop-portfolio-screen@3x.webp 3x" media="(min-width: 1200px)" 
+                                    type="image/webp">
+                                   
+                                    <source srcset="./images/desktop-portfolio-screen.jpg 1x, ./images/desktop-portfolio-screen@2x.jpg 2x, ./images/desktop-portfolio-screen@3x.jpg 3x" media="(min-width: 1200px)" >
+                                   
+                                    <source srcset="./images/tablet-portfolio-screen.webp 1x, ./images/tablet-portfolio-screen@2x.webp 2x, ./images/tablet-portfolio-screen@3x.webp 3x" media="(min-width: 768px)" 
+                                    type="image/webp">
+                                   
+                                    <source srcset="./images/tablet-portfolio-screen.jpg 1x, ./images/tablet-portfolio-screen@2x.jpg 2x, ./images/tablet-portfolio-screen@3x.jpg 3x" media="(min-width: 768px)" >
+                                  
+                                    <source srcset="./images/mobile-portfolio-screen.webp 1x, ./images/mobile-portfolio-screen@2x.webp 2x, ./images/mobile-portfolio-screen@3x.webp 3x" media="(max-width: 767px)" 
+                                    type="image/webp">
+                               
+                                    <source srcset="./images/mobile-portfolio-screen.jpg 1x, ./images/mobile-portfolio-screen@2x.jpg 2x, ./images/mobile-portfolio-screen@3x.jpg 3x" media="(max-width: 767px)" >
+                                <img src="./images/mobile-portfolio-screen.jpg" alt="screen illustration" width="100%">
+                            </picture>
                                 <div class="work-text">
                                     <p>Dolores autem esse quasi vero, assumenda atque reiciendis corrupti repellendus
                                         necessitatibus
@@ -159,7 +284,20 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-online-courses.jpg" alt="online courses" width="100%">
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-online-courses.webp 1x, ./images/desktop-portfolio-online-courses@2x.webp 2x, ./images/desktop-portfolio-online-courses@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                    
+                                    <source srcset="./images/desktop-portfolio-online-courses.jpg 1x, ./images/desktop-portfolio-online-courses@2x.jpg 2x, ./images/desktop-portfolio-online-courses@3x.jpg 3x" media="(min-width: 1200px)" >
+                                    
+                                    <source srcset="./images/tablet-portfolio-online-courses.webp 1x, ./images/tablet-portfolio-online-courses@2x.webp 2x, ./images/tablet-portfolio-online-courses@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-online-courses.jpg 1x, ./images/tablet-portfolio-online-courses@2x.jpg 2x, ./images/tablet-portfolio-online-courses@3x.jpg 3x" media="(min-width: 768px)" >
+                                    
+                                    <source srcset="./images/mobile-portfolio-online-courses.webp 1x, ./images/mobile-portfolio-online-courses@2x.webp 2x, ./images/mobile-portfolio-online-courses@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                                
+                                    <source srcset="./images/mobile-portfolio-online-courses.jpg 1x, ./images/mobile-portfolio-online-courses@2x.jpg 2x, ./images/mobile-portfolio-online-courses@3x.jpg 3x" media="(max-width: 767px)" >
+                                 <img src="./images/mobile-portfolio-online-courses.jpg" alt="online courses" width="100%">
+                            </picture>
                                 <div class="work-text">
                                     <p>Nesciunt voluptas rem nam reiciendis dolorum animi praesentium neque provident
                                         earum
@@ -179,8 +317,21 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-concept.jpg" alt="concept for instagram stories"
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-concept.webp 1x, ./images/desktop-portfolio-concept@2x.webp 2x, ./images/desktop-portfolio-concept@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                    
+                                    <source srcset="./images/desktop-portfolio-concept.jpg 1x, ./images/desktop-portfolio-concept@2x.jpg 2x, ./images/desktop-portfolio-concept@3x.jpg 3x" media="(min-width: 1200px)" >
+                                    
+                                    <source srcset="./images/tablet-portfolio-concept.webp 1x, ./images/tablet-portfolio-concept@2x.webp 2x, ./images/tablet-portfolio-concept@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-concept.jpg 1x, ./images/tablet-portfolio-concept@2x.jpg 2x, ./images/tablet-portfolio-concept@3x.jpg 3x" media="(min-width: 768px)" >
+                                    
+                                    <source srcset="./images/mobile-portfolio-concept.webp 1x, ./images/mobile-portfolio-concept@2x.webp 2x, ./images/mobile-portfolio-concept@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                                
+                                    <source srcset="./images/mobile-portfolio-concept.jpg 1x, ./images/mobile-portfolio-concept@2x.jpg 2x, ./images/mobile-portfolio-concept@3x.jpg 3x" media="(max-width: 767px)" >
+                                 <img src="./images/mobile-portfolio-concept.jpg" alt="concept for instagram stories"
                                     width="100%">
+                                </picture>
                                 <div class="work-text">
                                     <p>Eum excepturi minima magnam obcaecati ducimus? Eum, pariatur sapiente?
                                         Exercitationem
@@ -199,7 +350,20 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-organic-food.jpg" alt="web site organic food" width="100%">
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-organic-food.webp 1x, ./images/desktop-portfolio-organic-food@2x.webp 2x, ./images/desktop-portfolio-organic-food@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                   
+                                    <source srcset="./images/desktop-portfolio-organic-food.jpg 1x, ./images/desktop-portfolio-organic-food@2x.jpg 2x, ./images/desktop-portfolio-organic-food@3x.jpg 3x" media="(min-width: 1200px)" >
+                                    
+                                    <source srcset="./images/tablet-portfolio-organic-food.webp 1x, ./images/tablet-portfolio-organic-food@2x.webp 2x, ./images/tablet-portfolio-organic-food@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                    
+                                    <source srcset="./images/tablet-portfolio-organic-food.jpg 1x, ./images/tablet-portfolio-organic-food@2x.jpg 2x, ./images/tablet-portfolio-organic-food@3x.jpg 3x" media="(min-width: 768px)" >
+                                    
+                                    <source srcset="./images/mobile-portfolio-organic-food.webp 1x, ./images/mobile-portfolio-organic-food@2x.webp 2x, ./images/mobile-portfolio-organic-food@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                               
+                                    <source srcset="./images/mobile-portfolio-organic-food.jpg 1x, ./images/mobile-portfolio-organic-food@2x.jpg 2x, ./images/mobile-portfolio-organic-food@3x.jpg 3x" media="(max-width: 767px)" >
+                                <img src="./images/mobile-portfolio-organic-food.jpg" alt="web site organic food" width="100%">
+                            </picture>
                                 <div class="work-text">
                                     <p>Maxime ipsum obcaecati reprehenderit, quisquam, sed, quidem ab quaerat officiis
                                         tempora
@@ -218,8 +382,21 @@
                     <li class="work">
                         <a class="portfolio-link" href="">
                             <div class="work-thumb">
-                                <img src="./images/portfolio-coffee-website.jpg" alt="wed site for the coffee shop"
+                                <picture>
+                                    <source srcset="./images/desktop-portfolio-coffee-website.webp 1x, ./images/desktop-portfolio-coffee-website@2x.webp 2x, ./images/desktop-portfolio-coffee-website@3x.webp 3x" media="(min-width: 1200px)" type="image/webp">
+                                    
+                                    <source srcset="./images/desktop-portfolio-coffee-website.jpg 1x, ./images/desktop-portfolio-coffee-website@2x.jpg 2x, ./images/desktop-portfolio-coffee-website@3x.jpg 3x" media="(min-width: 1200px)" >
+                                    
+                                    <source srcset="./images/tablet-portfolio-coffee-website.webp 1x, ./images/tablet-portfolio-coffee-website@2x.webp 2x, ./images/tablet-portfolio-coffee-website@3x.webp 3x" media="(min-width: 768px)" type="image/webp">
+                                   
+                                    <source srcset="./images/tablet-portfolio-coffee-website.jpg 1x, ./images/tablet-portfolio-coffee-website@2x.jpg 2x, ./images/tablet-portfolio-coffee-website@3x.jpg 3x" media="(min-width: 768px)" >
+                                    
+                                    <source srcset="./images/mobile-portfolio-coffee-website.webp 1x, ./images/mobile-portfolio-coffee-website@2x.webp 2x, ./images/mobile-portfolio-coffee-website@3x.webp 3x" media="(max-width: 767px)" type="image/webp">
+                                
+                                    <source srcset="./images/mobile-portfolio-coffee-website.jpg 1x, ./images/mobile-portfolio-coffee-website@2x.jpg 2x, ./images/mobile-portfolio-coffee-website@3x.jpg 3x" media="(max-width: 767px)" >
+                                 <img src="./images/mobile-portfolio-coffee-website.jpg" alt="wed site for the coffee shop"
                                     width="100%">
+                                </picture>
                                 <div class="work-text">
                                     <p>Ratione possimus illo modi obcaecati, natus nobis, porro delectus quia numquam
                                         maiores,
@@ -239,7 +416,7 @@
         </section>
     </main>
 
-    <footer class=" footer">
+    <footer class="footer">
         <div class="container">
             <div class="motto">
                 <a class="footer-logo link" href="./index.html"><span class="web-logo">Web</span><span
@@ -306,6 +483,7 @@
                 </ul>
 
             </div>
+
             <div class="subscribe-footer">
                 <p class="social-media-text">Subscribe</p>
                 <form class="subscribe-form">
@@ -323,6 +501,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
