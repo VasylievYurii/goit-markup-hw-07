@@ -30,6 +30,18 @@
     gap: 40px;
     margin-left: 76px;
   }
+  .current::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pressed-state);
+    border-radius: 2px;
+    content: '';
+  }
+
   }
 
 @media screen and (min-width: 1200px) {
@@ -381,6 +393,9 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .item-icon {
     width: 64px;
     height: 60px;
+  }
+  .benefits-item {
+    font-size: 20px;
   }
 }
 
