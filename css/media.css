@@ -27,13 +27,9 @@
   .list.menu {
     display: flex;
     gap: 40px;
-  }
-  
-  .list.menu {
-    gap: 40px;
     margin-left: 76px;
   }
-}
+  }
 
 @media screen and (min-width: 1200px) {
     .section {
